@@ -24,8 +24,8 @@ public class SortTypeUI implements ListDiffInterface<SortTypeUI> {
     }
 
     @Override
-    public <T> boolean theSameAs(T object) {
-        return this==object;
+    public boolean theSameAs(SortTypeUI anotherItem) {
+        return this.getSortType() == anotherItem.getSortType();
     }
 
     @Override
